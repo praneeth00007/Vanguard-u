@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - heading "VANGUARD BLINDSIDE" [level=1] [ref=e4]
+      - paragraph [ref=e5]: 1v1 Tactical Zero-Knowledge Warfare
+      - generic [ref=e6]:
+        - button "Create Game" [ref=e7] [cursor=pointer]: Create Game
+        - button "Join Game" [ref=e9] [cursor=pointer]: Join Game
+      - generic [ref=e14]: SERVERS ONLINE
+      - generic [ref=e16]:
+        - generic [ref=e17]: 16-BIT PIXEL ART
+        - generic [ref=e19]: 60 FPS
+        - generic [ref=e21]: P2P NETWORK
+    - generic [ref=e25]: SYSTEM READY
+    - generic [ref=e27]:
+      - generic [ref=e28]: ●
+      - generic [ref=e29]: LIVE ARENA
+    - generic [ref=e30]: v0.1.0
+  - alert [ref=e31]
