@@ -19,15 +19,98 @@ body {
   overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
+  font-family: 'Courier New', monospace;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Selection styling */
+::selection {
+  background: rgba(255, 170, 0, 0.3);
+  color: #ffffff;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
 }
 
 /* Ensure Phaser canvas doesn't block UI interactions */
 canvas {
-  pointer-events: none;
+  pointer-events: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Button focus styles */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 170, 0, 0.5);
+}
+
+button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+button:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255, 170, 0, 0.5);
+}
+
+/* Animation keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 170, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 170, 0, 0.4);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .pixel-perfect {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Phaser container styles */
+.phaser-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.phaser-container canvas {
+  display: block;
+  margin: 0 auto;
 }

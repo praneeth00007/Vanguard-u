@@ -1,0 +1,39 @@
+Total messages: 37 (Errors: 0, Warnings: 35)
+
+[INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38559
+[LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:16702
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 1 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 2 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 3 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 4 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 5 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 6 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" tank_sheet 7 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 1 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 2 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 3 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 4 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 5 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 6 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 7 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 8 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" rover_sheet 9 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 1 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 2 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 3 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 4 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 5 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 6 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" explosion_sheet 7 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" muzzle_flash_sheet 1 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" muzzle_flash_sheet 2 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" muzzle_flash_sheet 3 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" smoke_sheet 1 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" smoke_sheet 2 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" smoke_sheet 3 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" smoke_sheet 4 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] Texture "%s" has no frame "%s" smoke_sheet 5 @ webpack-internal:///(app-pages-browser)/./node_modules/phaser/dist/phaser.js:215878
+[WARNING] [.WebGL-0x32bc0014e800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ http://localhost:3000/:0
+[WARNING] [.WebGL-0x32bc0014e800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ http://localhost:3000/:0
+[WARNING] [.WebGL-0x32bc0014e800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ http://localhost:3000/:0
+[WARNING] [.WebGL-0x32bc0014e800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) @ http://localhost:3000/:0
