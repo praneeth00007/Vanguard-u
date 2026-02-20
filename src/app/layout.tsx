@@ -25,7 +25,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="antialiased bg-black min-h-screen">
+      <body className="antialiased bg-black w-screen h-screen overflow-hidden">
         {children}
       </body>
     </html>

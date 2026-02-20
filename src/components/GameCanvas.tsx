@@ -18,10 +18,10 @@ export default function GameCanvas() {
 
     const config: Phaser.Types.Core.GameConfig = {
       type: Phaser.AUTO,
-      width: 600,
-      height: 400,
+      width: window.innerWidth,
+      height: window.innerHeight,
       parent: containerRef.current,
-      backgroundColor: '#0a0f0a',
+      backgroundColor: '#080c08',
       pixelArt: true,
       roundPixels: true,
       antialias: false,
@@ -33,10 +33,8 @@ export default function GameCanvas() {
         },
       },
       scale: {
-        mode: Phaser.Scale.FIT,
+        mode: Phaser.Scale.RESIZE,
         autoCenter: Phaser.Scale.CENTER_BOTH,
-        width: 600,
-        height: 400,
       },
       render: {
         pixelArt: true,
@@ -50,11 +48,23 @@ export default function GameCanvas() {
     };
 
     gameRef.current = new Phaser.Game(config);
+
+    // Handle resize
+    const handleResize = () => {
+      if (gameRef.current) {
+        gameRef.current.scale.resize(window.innerWidth, window.innerHeight);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   useEffect(() => {
     if (isMounted) {
-      // Small delay to ensure DOM is ready
       const timer = setTimeout(() => {
         initGame();
       }, 100);
@@ -77,18 +87,19 @@ export default function GameCanvas() {
   if (!isMounted) {
     return (
       <div 
-        className="w-full aspect-[3/2] min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden border-2 border-zinc-800 shadow-2xl bg-zinc-950 flex items-center justify-center"
-      >
-        <div className="text-zinc-700 text-sm animate-pulse">Loading Battlefield...</div>
-      </div>
+        className="fixed inset-0 z-0 bg-[#080c08]"
+      />
     );
   }
 
   return (
     <div 
       ref={containerRef} 
-      className="w-full aspect-[3/2] min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden border-2 border-zinc-800 shadow-2xl"
-      style={{ backgroundColor: '#0a0f0a' }}
+      className="fixed inset-0 z-0"
+      style={{ 
+        backgroundColor: '#080c08',
+        pointerEvents: 'none'
+      }}
     />
   );
 }

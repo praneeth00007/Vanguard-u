@@ -17,6 +17,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  overflow-y: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: 'Courier New', monospace;
@@ -47,9 +48,9 @@ body {
   background: #3a3a3a;
 }
 
-/* Ensure Phaser canvas doesn't block UI interactions */
+/* Phaser canvas styling */
 canvas {
-  pointer-events: auto;
+  display: block;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
@@ -78,15 +79,6 @@ button:focus-visible {
   }
 }
 
-@keyframes scanline {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
-
 /* Utility classes */
 @layer utilities {
   .text-balance {
@@ -101,16 +93,4 @@ button:focus-visible {
     image-rendering: pixelated;
     image-rendering: crisp-edges;
   }
-}
-
-/* Phaser container styles */
-.phaser-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.phaser-container canvas {
-  display: block;
-  margin: 0 auto;
 }
